@@ -2,7 +2,9 @@
 
 Nome: Enzo Manzoni Araújo
 Matricula: 26174732
-Dupla (M2 em diante):
+---
+
+## M2 - Quem quebrou o painel
 
 - **Hash curto do commit:** 01ef93b
 - **Autor:** Tarcisio Melo <tarcisio.melo@techinova.com.br>
@@ -10,32 +12,16 @@ Dupla (M2 em diante):
 - **Linha alterada:**
   - **Antes (-):** `return (leitura - 32) * 5 / 9;`
   - **Depois (+):** `return leitura * 9 / 5 + 32;`
-
----
-
-## M2 - Quem quebrou o painel
-
-**Hash curto do commit que introduziu o erro:**
-
-**Autor:**
-
-**Data:**
-
-**Linha alterada (antes e depois):**
-
-```
-antes:
-depois:
-```
-
 ---
 
 ## M3 - O segredo vazado
 
 **O que voce esperava ver no `git status` e o que apareceu:**
 
-**Depois do push, alguem que clonar o repositorio ainda consegue ler a chave?
-Responda em duas linhas, explicando o motivo:**
+** Ao rodar o `git status`, o arquivo `config/credenciais.env` continuou sendo rastreado, mesmo que nós tenhamos criado um novo arquivo `.gitignore`, oque a primeira vista para mim foi estranho. Porém isso aconteceu porque o `.gitignore` só ignora arquivos novos. Como ele já havia sido commitado no passado, o Git continuou monitorando suas alterações até rodarmos o `git rm --cached`.
+
+- **Pergunta obrigatória:** Depois desse push, alguém que clonar o repositório ainda consegue ler a chave?
+- **Resposta:** Sim, qualquer pessoa que clonar o repositório ainda conseguirá ler a chave. Como ela foi commitada anteriormente, ela permanece registrada no histórico do Git e pode ser visualizada ao navegar pelos commits antigos.
 
 ---
 

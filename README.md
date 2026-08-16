@@ -11,3 +11,6 @@ Abra o arquivo `index.html` no navegador. Nao precisa de servidor web.
 <!-- Escreva aqui seu nome completo e sua matricula -->
 
 Enzo Manozoni Araújo 26174732
+
+
+Alteração feita para o f3
